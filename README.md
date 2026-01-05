@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# 🦅 The Presidential Answer Machine
 
-This contains everything you need to run your app locally.
+Welcome to the most tremendous, high-energy, and winningest AI application ever built. This is **The Presidential Answer Machine**.
 
-View your app in AI Studio: https://ai.studio/apps/drive/16A6rWHGTs_YbhdguqYYoMWLBVQ2l1Oc_
+## 🚀 Overview
+This project uses the cutting-edge Gemini API to provide answers to any question you ask, delivered in the iconic and signature style of the 45th President of the United States. 
 
-## Run Locally
+## ✨ Features
+- **Tremendous Answers**: Get responses full of superlatives and high-energy rhetoric.
+- **Winning UI**: A gold-and-navy themed interface fit for a leader.
+- **Hear the Truth**: Integrated Text-to-Speech (TTS) allows you to listen to the answers in a confident, presidential tone.
+- **Suggested Topics**: Not sure what to ask? Choose from a list of major, important topics.
 
-**Prerequisites:**  Node.js
+## 🛠️ How to Access
+To view the project, simply open the `index.html` file in your browser environment. 
 
+## 🇺🇸 Usage
+1. Type your question into the **"Ask a Tremendous Question..."** input box.
+2. Hit the **"ASK"** button.
+3. Watch the answer stream in real-time.
+4. Click **"Hear the Truth"** to listen to the response.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+*Believe me, it's going to be huge.*

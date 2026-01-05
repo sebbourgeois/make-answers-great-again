@@ -31,14 +31,23 @@ export class GeminiService {
 
   async generateTrumpSpeech(text: string): Promise<Uint8Array | null> {
     try {
+      // We instruct the model specifically on the Trumpian cadence: 
+      // Forceful, rhythmic pauses, high energy on superlatives.
+      const speechPrompt = `
+        Speak this text exactly like Donald J. Trump would. 
+        Use a forceful, high-energy, and confident tone. 
+        Incorporate his signature rhythmic pauses and emphasize the superlatives. 
+        The text to speak is: "${text}"
+      `;
+
       const response = await this.ai.models.generateContent({
         model: "gemini-2.5-flash-preview-tts",
-        contents: [{ parts: [{ text: `Say this in a high-energy, confident voice: ${text}` }] }],
+        contents: [{ parts: [{ text: speechPrompt }] }],
         config: {
           responseModalities: [Modality.AUDIO],
           speechConfig: {
             voiceConfig: {
-              prebuiltVoiceConfig: { voiceName: 'Puck' }, // Using Puck for a more assertive male-leaning tone
+              prebuiltVoiceConfig: { voiceName: 'Puck' }, // Puck is best for assertive, high-energy male delivery
             },
           },
         },

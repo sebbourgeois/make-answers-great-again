@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TrumpInput from './components/TrumpInput';
 import TrumpResponse from './components/TrumpResponse';
 import { geminiService } from './services/geminiService';
@@ -29,7 +29,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center p-4 md:p-8 relative">
+    <div className="min-h-screen flex flex-col items-center p-4 md:p-8 pt-12 md:pt-20 relative">
       {/* Background Decorative Elements */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 opacity-10">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#BF0A30] blur-[150px] rounded-full"></div>
@@ -38,13 +38,13 @@ const App: React.FC = () => {
 
       {/* Main Content */}
       <main className="w-full max-w-6xl z-10">
-        <header className="text-center mb-12">
-          <div className="inline-flex items-center gap-4 mb-4">
+        <header className="text-center mb-16">
+          <div className="inline-flex items-center gap-4 mb-6">
             <div className="h-[2px] w-12 bg-[#D4AF37]"></div>
             <EagleIcon />
             <div className="h-[2px] w-12 bg-[#D4AF37]"></div>
           </div>
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-2 italic">
+          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-4 italic">
             THE <span className="text-[#D4AF37]">PRESIDENTIAL</span> <br />
             ANSWER MACHINE
           </h1>

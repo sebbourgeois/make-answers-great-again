@@ -1,0 +1,7 @@
+{
+  "name": "The Presidential Answer Machine",
+  "description": "Get tremendous answers to all your questions in the signature style of Donald J. Trump. High energy, the best words, and total winning.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
